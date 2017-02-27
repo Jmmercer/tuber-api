@@ -67,7 +67,7 @@ Tutor.create(name:             'Julio Coolio',
              current_location: "{country: 'Canada', city: 'Calgary', long: 100, lat: 60}",
              is_available:     false,
              subjects_taught:  [3, 7],
-             avatar:           'assets/images/default_profile_images_default_profile_6_400x400.png'
+             avatar:           'href="http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/Q-Z/sun-bear-tongue.jpg"'
             )
 
 Tutor.create(name:             'Biff Clay',
