@@ -67,7 +67,7 @@ Tutor.create(name:             'Julio Coolio',
              current_location: "{country: 'Canada', city: 'Calgary', long: 100, lat: 60}",
              is_available:     false,
              subjects_taught:  [3, 7],
-             avatar:           'href="http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/Q-Z/sun-bear-tongue.jpg"'
+             avatar:           'http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/Q-Z/sun-bear-tongue.jpg'
             )
 
 Tutor.create(name:             'Biff Clay',
@@ -80,7 +80,7 @@ Tutor.create(name:             'Biff Clay',
              current_location: "{country: 'Canada', city: 'Calgary', long: 100, lat: 60}",
              is_available:     false,
              subjects_taught:  [6, 15],
-             avatar:           'assets/images/default_profile_images_default_profile_6_400x400.png'
+             avatar:           'http://zoo.sandiegozoo.org/sites/default/files/animal_hero/T07-0150-031.jpg'
             )
 
 Tutor.create(name:             'Zinat Agresta',
@@ -93,7 +93,7 @@ Tutor.create(name:             'Zinat Agresta',
              current_location: "{country: 'Canada', city: 'Calgary', long: 100, lat: 60}",
              is_available:     false,
              subjects_taught:  [3, 7],
-             avatar:           'assets/images/default_profile_images_default_profile_6_400x400.png'
+             avatar:           'https://taronga.org.au/sites/tarongazoo/themes/custom/taronga/images/centenary/legacy-bear-thumb.png'
             )
 
 Tutor.create(name:             'Frederik Campbell',
@@ -106,7 +106,7 @@ Tutor.create(name:             'Frederik Campbell',
              current_location: "{country: 'Canada', city: 'Calgary', long: 100, lat: 60}",
              is_available:     false,
              subjects_taught:  [3, 7],
-             avatar:           'assets/images/default_profile_images_default_profile_6_400x400.png'
+             avatar:           'http://www.bioexpedition.com/wp-content/uploads/2012/05/Sun_Bear_Sunbathing_600.jpg'
             )
 
 Tutor.create(name:             'Otávio Beránek',
@@ -119,7 +119,7 @@ Tutor.create(name:             'Otávio Beránek',
              current_location: "{country: 'Canada', city: 'Calgary', long: 100, lat: 60}",
              is_available:     false,
              subjects_taught:  [3, 7],
-             avatar:           'assets/images/default_profile_images_default_profile_6_400x400.png'
+             avatar:           'http://www.bsbcc.org.my/uploads/1/0/3/3/10335502/s143455058252546566_p11_i2_w650.jpeg'
             )
 
 Tutor.create(name:             'Berry Jakobsen',
