@@ -23,6 +23,9 @@ gem 'rack-cors'
 # JSON Serialization
 gem 'active_model_serializers', '~> 0.10.0'
 
+# JSON Web Tokens
+gem 'jwt'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
@@ -31,6 +34,7 @@ group :development, :test do
   gem 'faker'
   gem 'shoulda-matchers'
   gem 'database_cleaner'
+  gem 'minitest'
 end
 
 group :development do

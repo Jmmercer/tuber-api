@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170222204156) do
+ActiveRecord::Schema.define(version: 20170302164613) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20170222204156) do
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
     t.string   "user_id"
+    t.string   "avatar"
     t.index ["user_id"], name: "index_students_on_user_id", using: :btree
   end
 
@@ -42,30 +43,28 @@ ActiveRecord::Schema.define(version: 20170222204156) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "tutor_subjects", force: :cascade do |t|
-    t.integer  "tutor_id"
-    t.integer  "subject_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["subject_id"], name: "index_tutor_subjects_on_subject_id", using: :btree
-    t.index ["tutor_id"], name: "index_tutor_subjects_on_tutor_id", using: :btree
+  create_table "subjects_tutors", id: false, force: :cascade do |t|
+    t.integer "tutor_id"
+    t.integer "subject_id"
+    t.index ["subject_id"], name: "index_subjects_tutors_on_subject_id", using: :btree
+    t.index ["tutor_id"], name: "index_subjects_tutors_on_tutor_id", using: :btree
   end
 
   create_table "tutors", force: :cascade do |t|
     t.text     "education"
     t.text     "experience"
     t.string   "email"
-    t.string   "phone"
     t.string   "hours"
     t.integer  "rate_cents"
     t.string   "current_location"
-    t.boolean  "is_available"
     t.string   "subjects_taught"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
     t.string   "avatar"
     t.string   "name"
+    t.string   "phone"
     t.string   "user_id"
+    t.integer  "status_code"
     t.index ["user_id"], name: "index_tutors_on_user_id", using: :btree
   end
 

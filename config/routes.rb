@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
+  resources :agents
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-
-  root to: 'tutors#index'
 
   resources :tutors
   resources :students
@@ -10,5 +9,10 @@ Rails.application.routes.draw do
   resources :users
 
   root to: 'tutors#index'
+
+  post    'sessions'     => 'sessions#create'
+  delete  'sessions/:id' => 'sessions#destroy'
+
+  get 'tutors/search/:search_term' => 'tutors#search'
 
 end
